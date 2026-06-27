@@ -20,3 +20,12 @@ def writeData(file,sheetName,rownum,columnno,data):
     sheet = workbook[sheetName]
     sheet.cell(row=rownum, column=columnno).value = data
     workbook.save(file)
+
+
+
+
+
+
+
+
+

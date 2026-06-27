@@ -4,10 +4,12 @@ import configparser
 config = configparser.RawConfigParser()
 
 config_path = os.path.join(
-    os.path.dirname(os.path.dirname(__file__)),
-    "Configurations",
+    os.path.dirname(__file__),
     "config.ini"
 )
+
+print("__file__ =", __file__)
+print("Config Path =", config_path)
 
 config.read(config_path)
 
